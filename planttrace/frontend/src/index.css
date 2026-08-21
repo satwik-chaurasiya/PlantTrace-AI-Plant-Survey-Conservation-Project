@@ -1,0 +1,66 @@
+@import "leaflet/dist/leaflet.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.map-pane {
+  height: 100%;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input, textarea, button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+button.primary-btn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button.primary-btn:hover {
+  background-color: #15803d;
+}
+
+.badge {
+  background-color: #dcfce7;
+  color: #15803d;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
